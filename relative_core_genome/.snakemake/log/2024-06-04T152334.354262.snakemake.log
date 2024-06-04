@@ -1,7 +1,0 @@
-Building DAG of jobs...
-MissingInputException in rule ggcaller in file /home/daria/Documents/papers/plasmid-dcj/pling_paper_analyses/relative_core_genome/Snakefile, line 16:
-Missing input files for rule ggcaller:
-    output: ggcaller/MOB_secondary/cluster_AA091
-    wildcards: cluster=cluster_AA091
-    affected files:
-        ../clusters/cluster_lists/MOB_secondary/addenbrookes/cluster_AA091.txt
