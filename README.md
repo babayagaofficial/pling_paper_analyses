@@ -1,1 +1,1 @@
-# pling_paper_analyses
+# Workflow to reproduce all data and figures in pling paper
