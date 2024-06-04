@@ -21,8 +21,6 @@ rule ggcaller:
         fasta_list = lambda wildcards: get_list(wildcards.cluster)
     output:
         ann_dir = directory(f"{out}/{{cluster}}")
-    conda:
-        "ggc_env" #ggcaller version 1.3.4
     threads: 1 #default
     shell:
         "ggcaller --refs {input.fasta_list} --out {output.ann_dir} --repeat"
