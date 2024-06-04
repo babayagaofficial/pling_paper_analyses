@@ -1,0 +1,28 @@
+import glob
+import os
+
+tool = config["tool"] #change to "MOB_secondary" or "mge_cluster" to get the results for MOB-suite or mge-cluster
+cluster_path = f"../clusters/cluster_lists/{tool}/addenbrookes"
+out = f"ggcaller/{tool}"
+clusters = [os.path.basename(el).replace('.txt','').replace("_list", '') for el in glob.glob(f"{cluster_path}/*.txt")]
+
+def get_list(cluster):
+    if tool=="pling":
+        return f"{cluster_path}/{cluster}.txt"
+    else:
+        return f"{cluster_path}/{cluster}_list.txt"
+
+rule all:
+    input:
+        [f"{out}/{cluster}" for cluster in clusters]
+
+rule ggcaller:
+    input:
+        fasta_list = lambda wildcards: get_list(wildcards.cluster)
+    output:
+        ann_dir = directory(f"{out}/{{cluster}}")
+    conda:
+        "ggc_env" #ggcaller version 1.3.4
+    threads: 1 #default
+    shell:
+        "ggcaller --refs {input.fasta_list} --out {output.ann_dir} --repeat"
