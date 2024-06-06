@@ -1,9 +1,14 @@
 # Core genome calculation and plot generation
 
+
+To generate supp. figure 1, we first find the core genes with ggcaller, and then calculate the median relative core genomes size and plot its distribution.
+
+To run ggcaller on all the clusters per tool, run the following commands:
+
 ```
 snakemake --config tool="pling" --cores 1
 snakemake --config tool="MOB_secondary" --cores 1
-snakemake --config tool="mge_cluster" --cores 1--keep-going
+snakemake --config tool="mge_cluster" --cores 1 --keep-going
 ```
 
 Note that for mge-cluster ggcaller fails on cluster 22 due to a segmentation fault, so this cluster was left out of further analysis.
