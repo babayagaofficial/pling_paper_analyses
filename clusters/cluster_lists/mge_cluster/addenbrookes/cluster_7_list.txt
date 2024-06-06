@@ -1,0 +1,7 @@
+fastas/addenbrookes/cpe009_contig_3.fna
+fastas/addenbrookes/cpe025_contig_2.fna
+fastas/addenbrookes/cpe028_contig_4.fna
+fastas/addenbrookes/cpe029_contig_5.fna
+fastas/addenbrookes/cpe040_contig_4.fna
+fastas/addenbrookes/cpe043_3.fna
+fastas/addenbrookes/cpe068_contig_3.fna
