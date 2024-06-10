@@ -1,0 +1,6 @@
+fastas/russian_doll/pKPC_CAV1320.fna
+fastas/russian_doll/pKPC_CAV1043.fna
+fastas/russian_doll/pKPC_CAV1492.fna
+fastas/russian_doll/pKPC_CAV1335.fna
+fastas/russian_doll/pKPC_CAV1596-97.fna
+fastas/russian_doll/pKPC_CAV1321-45.fna

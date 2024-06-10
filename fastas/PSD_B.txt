@@ -1,0 +1,2 @@
+fastas/PSD/NZ_AP024098.1.fna
+fastas/PSD/NZ_CP022793.1.fna
