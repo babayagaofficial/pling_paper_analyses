@@ -4,7 +4,8 @@
 
 You will have to ensure that you have:
 - conda
-- pling (https://github.com/iqbal-lab-org/pling)
+- pling v1.0.3 (https://github.com/iqbal-lab-org/pling)
+- mash v2.3 (https://mash.readthedocs.io/en/latest/)
 - an internet connection
 - (if you want to do all the run time evaluations) Gurobi
 
