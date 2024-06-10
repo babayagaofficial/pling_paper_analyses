@@ -25,7 +25,7 @@ The commands to reproduce the clustering outputs from all tools for Russian doll
 The remaining parts of the analysis from the paper are split into their own folder, with their own description file.
 
 - For alignment visualisations from Figures 3, 4, 5, and Supp. Figures 3-7, please refer to `alignment_figs`.
-- For distances from Figure 3 and Supp. Table 2, please refer to `psd`.
+- For distances from Figure 3 and Supp. Table 2, please refer to `psd.md`.
 - For Figure 6, please refer to `tree_vis`.
 - For Supp. Figure 1, please refer to `relative_core_genome`.
 - For van Dongen distance calculation, please refer to `split_join`.
@@ -36,7 +36,6 @@ The remaining parts of the analysis from the paper are split into their own fold
 Where `pling_path` is the path to the directory in which pling is, please run:
 ```
 PYTHONPATH=pling_path python pling_path/run_pling.py fastas/russian_doll.txt russian_doll_pling align
-
 ```
 then for MOB-suite:
 ```
