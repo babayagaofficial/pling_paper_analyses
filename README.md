@@ -5,6 +5,7 @@
 You will have to ensure that you have:
 - conda
 - pling v1.0.3 (https://github.com/iqbal-lab-org/pling)
+- pling version at commit https://github.com/iqbal-lab-org/pling/commit/ed8ba1e84bbffad9963d71aa2db1c43bd67effaf
 - mash v2.3 (https://mash.readthedocs.io/en/latest/)
 - an internet connection
 - (if you want to do all the run time evaluations) Gurobi
@@ -21,7 +22,7 @@ beforehand.
 
 ## Content
 
-The commands to reproduce the clustering outputs from all tools for Russian doll and Addenbrookes plasmids are further below.
+The commands to reproduce the clustering outputs from all tools for Russian doll and Addenbrookes plasmids are further below. Note that for these you need the pling version at commit ed8ba1e.
 
 The remaining parts of the analysis from the paper are split into their own folder, with their own description file.
 
@@ -36,7 +37,7 @@ The remaining parts of the analysis from the paper are split into their own fold
 
 Where `pling_path` is the path to the directory in which pling is, please run:
 ```
-PYTHONPATH=pling_path python pling_path/run_pling.py fastas/russian_doll.txt russian_doll_pling align
+PYTHONPATH=pling_path python pling_path/run_pling.py fastas/russian_doll.txt russian_doll_pling align -j 0.5
 ```
 then for MOB-suite:
 ```
@@ -52,7 +53,7 @@ mge_cluster --create --input fastas/russian_doll.txt --prefix russian_doll --thr
 
 Where `pling_path` is the path to the directory in which pling is, please run:
 ```
-PYTHONPATH=pling_path/pling python pling_path/pling/run_pling.py fastas/addenbrookes.txt addenbrookes_pling align --containment_distance 0.3
+PYTHONPATH=pling_path/pling python pling_path/pling/run_pling.py fastas/addenbrookes.txt addenbrookes_pling align -j 0.3
 ```
 then for MOB-suite:
 ```
