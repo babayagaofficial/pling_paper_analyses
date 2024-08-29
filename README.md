@@ -3,6 +3,7 @@
 ## Dependancies
 
 You will have to ensure that you have:
+
 - pling v1.0.3 (https://github.com/iqbal-lab-org/pling/releases/tag/v1.0.3)
 - mash v2.3 (https://mash.readthedocs.io/en/latest/)
 - (if you want to do all the run time evaluations) Gurobi
@@ -19,7 +20,7 @@ beforehand.
 
 ## Content
 
-The commands to reproduce the clustering outputs from all tools for Russian doll and Addenbrookes plasmids are further below.
+The commands to reproduce the clustering outputs from all tools for Russian doll and Addenbrookes plasmids are further below. Note that for these you need the pling version at commit ed8ba1e.
 
 The remaining parts of the analysis from the paper are split into their own folder, with their own description file.
 
