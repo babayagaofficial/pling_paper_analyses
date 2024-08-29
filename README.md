@@ -20,7 +20,7 @@ beforehand.
 
 ## Content
 
-The commands to reproduce the clustering outputs from all tools for Russian doll and Addenbrookes plasmids are further below. Note that for these you need the pling version at commit ed8ba1e.
+The commands to reproduce the clustering outputs from all tools for Russian doll and Addenbrookes plasmids are further below.
 
 The remaining parts of the analysis from the paper are split into their own folder, with their own description file.
 
