@@ -3,10 +3,8 @@
 ## Dependancies
 
 You will have to ensure that you have:
-- conda
-- pling v1.0.3 (https://github.com/iqbal-lab-org/pling)
+- pling v1.0.3 (https://github.com/iqbal-lab-org/pling/releases/tag/v1.0.3)
 - mash v2.3 (https://mash.readthedocs.io/en/latest/)
-- an internet connection
 - (if you want to do all the run time evaluations) Gurobi
 
 Please create a conda environment with the `env.yaml` file
@@ -32,11 +30,13 @@ The remaining parts of the analysis from the paper are split into their own fold
 - For van Dongen distance calculation, please refer to `split_join`.
 - For run time evaluations in Supp. Table 1, please refer to `runtime_evals`.
 
+The total output for Russian doll and Addenbrookes plasmids is available [here](https://doi.org/10.6084/m9.figshare.26871001.v1)
+
 ## Cluster Russian doll plasmids
 
-Where `pling_path` is the path to the directory in which pling is, please run:
+These need to be run with pling v2. Please run:
 ```
-PYTHONPATH=pling_path python pling_path/run_pling.py fastas/russian_doll.txt russian_doll_pling align
+pling fastas/russian_doll.txt russian_doll_pling align
 ```
 then for MOB-suite:
 ```
@@ -50,9 +50,9 @@ mge_cluster --create --input fastas/russian_doll.txt --prefix russian_doll --thr
 
 ## Cluster Addenbrookes plasmids
 
-Where `pling_path` is the path to the directory in which pling is, please run:
+Please run:
 ```
-PYTHONPATH=pling_path/pling python pling_path/pling/run_pling.py fastas/addenbrookes.txt addenbrookes_pling align --containment_distance 0.3
+pling fastas/addenbrookes.txt addenbrookes_pling align --containment_distance 0.3
 ```
 then for MOB-suite:
 ```

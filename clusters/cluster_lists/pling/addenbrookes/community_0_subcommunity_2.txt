@@ -1,8 +1,8 @@
-fastas/addenbrookes/cpe035_contig_1.fna
-fastas/addenbrookes/cpe061_contig_2.fna
-fastas/addenbrookes/cpe059_contig_1.fna
-fastas/addenbrookes/cpe022_contig_2.fna
-fastas/addenbrookes/cpe004_2.fna
-fastas/addenbrookes/cpe034_2.fna
-fastas/addenbrookes/cpe003_contig_3.fna
-fastas/addenbrookes/cpe058_contig_2.fna
+../fastas/addenbrookes/cpe035_contig_1.fna
+../fastas/addenbrookes/cpe061_contig_2.fna
+../fastas/addenbrookes/cpe059_contig_1.fna
+../fastas/addenbrookes/cpe022_contig_2.fna
+../fastas/addenbrookes/cpe004_2.fna
+../fastas/addenbrookes/cpe034_2.fna
+../fastas/addenbrookes/cpe003_contig_3.fna
+../fastas/addenbrookes/cpe058_contig_2.fna

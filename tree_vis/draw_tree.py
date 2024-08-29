@@ -46,7 +46,7 @@ for n in t.traverse():
 
 present_communities=list(set(present_communities))
 
-cross_communities = ["community_6_subcommunity_2", "community_1_subcommunity_16", "community_4_subcommunity_0", "community_14_subcommunity_0", "community_4_subcommunity_2", "community_1_subcommunity_21", "community_9_subcommunity_0"]
+cross_communities = ["community_4_subcommunity_2", "community_1_subcommunity_17", "community_5_subcommunity_0", "community_12_subcommunity_0", "community_5_subcommunity_2", "community_1_subcommunity_21", "community_13_subcommunity_0"]
 
 colour_codes=[[230,159,0], [0,0,0], [0,158,115], [240,228,66], [0,114,178], [213,94,0], [204,121,167]]
 

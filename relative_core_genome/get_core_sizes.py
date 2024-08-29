@@ -43,7 +43,7 @@ for tool in tools:
             name = seq.name.split("/")[-1].replace(".fasta",'')
             ids = genes[genes["No. isolates"]==num_isolates][name].to_list()
             rel_core_size.append(floor((avg_core_length/length)*100))
-        print(median(rel_core_size))
+        print(tool, cluster, median(rel_core_size))
         cores["core_size_%"].append(median(rel_core_size))
 
 cores_df = pd.DataFrame.from_dict(cores)

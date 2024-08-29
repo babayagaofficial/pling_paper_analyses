@@ -8,7 +8,7 @@ for cluster in clusters:
     if len(clusters_df[clusters_df["primary_cluster_id"]==cluster]["sample_id"].values)>1:
         with open(f"cluster_{cluster}_list.txt", "w") as f:
             for name in clusters_df[clusters_df["secondary_cluster_id"]==cluster]["sample_id"].values:
-                f.write(f"fastas/addenbrookes/{name}.fna\n")
+                f.write(f"../fastas/addenbrookes/{name}.fna\n")
 
 '''
 count=0

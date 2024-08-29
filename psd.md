@@ -2,6 +2,8 @@
 
 ## Examples A-C
 
+For these you will need to git clone version 1.0.3 of pling (conda install is not available for version 1).
+
 Where `pling_path` is the path to the directory in which pling is, for example A please run:
 ```
 PYTHONPATH=pling_path python pling_path/run_pling.py fastas/PSD_A.txt PSD_A align

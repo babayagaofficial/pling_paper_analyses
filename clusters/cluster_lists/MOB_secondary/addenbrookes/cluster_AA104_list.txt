@@ -1,2 +1,2 @@
-fastas/addenbrookes/cpe013_3.fna
-fastas/addenbrookes/cpe014_contig_5.fna
+../fastas/addenbrookes/cpe013_3.fna
+../fastas/addenbrookes/cpe014_contig_5.fna
